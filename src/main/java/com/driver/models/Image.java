@@ -33,11 +33,11 @@ public class Image {
         this.description = description;
     }
 
-    public String getDimension() {
+    public String getDimensions() {
         return dimension;
     }
 
-    public void setDimension(String dimension) {
+    public void setDimensions(String dimension) {
         this.dimension = dimension;
     }
 
