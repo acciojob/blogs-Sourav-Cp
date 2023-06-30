@@ -42,15 +42,15 @@ public class ImageService {
         int idx = imageDimension.indexOf('X');
 
         String a = imageDimension.substring(0,idx);
-        String b = imageDimension.substring(idx+1,imageDimension.length());
+        String b = imageDimension.substring(idx+1);
 
         int imageWidth = Integer.parseInt(a);
         int imageLength = Integer.parseInt(b);
 
-        int idxOfScreen = imageDimension.indexOf('X');
+        int idxOfScreen = screenDimensions.indexOf('X');
 
-        String aOfScreen = imageDimension.substring(0,idxOfScreen);
-        String bOfScreen = imageDimension.substring(idxOfScreen+1,screenDimensions.length());
+        String aOfScreen = screenDimensions.substring(0,idxOfScreen);
+        String bOfScreen = screenDimensions.substring(idxOfScreen+1);
 
         int screenWidth = Integer.parseInt(aOfScreen);
         int screenLength = Integer.parseInt(bOfScreen);
