@@ -34,6 +34,7 @@ public class BlogService {
         user.getBlogList().add(blog);
 
         userRepository1.save(user);
+        blogRepository1.save(blog);
 
         return blog;
     }
